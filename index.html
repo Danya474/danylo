@@ -1,0 +1,214 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт про Minecraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #282828;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            background-color: #444444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f0a500;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #282828;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #282828;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .form-container button:hover {
+            background-color: #444444;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Все про Minecraft</h1>
+    <p>Дізнайтесь більше про популярну гру Minecraft!</p>
+</header>
+
+<nav>
+    <a href="#about">Про гру</a>
+    <a href="#modes">Режими гри</a>
+    <a href="#items">Предмети</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#video">Відео</a>
+    <a href="#contact">Контакти</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>Про Minecraft</h2>
+        <p>Minecraft — це популярна гра в жанрі пісочниці, де гравці можуть будувати структури, подорожувати світом та боротися з монстрами. Вона була розроблена Mojang і вперше випущена в 2011 році. Minecraft доступна на різних платформах, таких як ПК, консолі та мобільні пристрої.</p>
+    </section>
+
+    <section id="modes">
+        <h2>Режими гри</h2>
+        <ul>
+            <li><strong>Survival (Виживання):</strong> Гравці повинні збирати ресурси та будувати для того, щоб вижити в світі Minecraft.</li>
+            <li><strong>Creative (Творчість):</strong> Гравці мають необмежені ресурси і можуть створювати різні об'єкти та будівлі.</li>
+            <li><strong>Adventure (Пригоди):</strong> Гравці можуть досліджувати світи, створені іншими, але не можуть руйнувати чи будувати блоки.</li>
+            <li><strong>Hardcore (Хардкор):</strong> Це режим виживання, але з більш високим рівнем складності та лише однією спробою.</li>
+        </ul>
+    </section>
+
+    <section id="items">
+        <h2>Предмети Minecraft</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Назва предмета</th>
+                    <th>Тип</th>
+                    <th>Опис</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Дерев'яний меч</td>
+                    <td>Інструмент</td>
+                    <td>Меч, який дозволяє битися з монстрами та іншими гравцями.</td>
+                </tr>
+                <tr>
+                    <td>Кам'яний лопата</td>
+                    <td>Інструмент</td>
+                    <td>Лопата для копання землі та інших м'яких блоків.</td>
+                </tr>
+                <tr>
+                    <td>Залізна броня</td>
+                    <td>Броня</td>
+                    <td>Захищає гравця від пошкоджень.</td>
+                </tr>
+                <tr>
+                    <td>Золоте яблуко</td>
+                    <td>Їжа</td>
+                    <td>Відновлює здоров'я та дає додаткові ефекти.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="https://th.bing.com/th/id/OIP.1Cevr4t8ISoBkAGGbUBh7AAAAA?w=299&h=180&c=7&r=0&o=5&pid=1.7">
+            <img src="https://th.bing.com/th/id/OIP.7HGf26rAVwy6rMbUEqamrQHaD7?w=271&h=180&c=7&r=0&o=5&pid=1.7">
+            <img src="https://th.bing.com/th/id/OIP.9VT7jYiXK4PsW1aZ1wcDlwHaHW?w=251&h=248&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Відео: Трейлер Minecraft фільму</h2>
+        <iframe src="https://www.youtube.com/embed/G2tLNhuNbKA" title="Minecraft Movie Trailer"></iframe>
+    </section>
+
+    <section id="contact">
+        <h2> зв'язок</h2>
+        <div class="form-container">
+            <h3>Залиште мені повідомлення:</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Твоє ім'я" required>
+                <textarea name="message" placeholder="твоє повідомлення" required></textarea>
+                <button type="submit">опа надсилаєм</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
